@@ -611,7 +611,7 @@ async def main():
         port = (
             args.web if args.web else 5000
         )  # args.web is either the specified port or 5000 by default
-        app.run(port=port)
+        app.run(host="0.0.0.0", port=port)
         return
 
     if usernames == {}:
